@@ -35,3 +35,13 @@ class Route{
         }
     }
 }
+
+
+//  use Route class  (you just need import this file in index.php file ) 
+//  how use Route method 
+//  defain or add your route to route_list in Route class
+// call route class methods   
+
+$uri =  parse_url($_SERVER['REQUEST_URI'])["path"];
+
+Route::route($uri , Route::$routte_list);
