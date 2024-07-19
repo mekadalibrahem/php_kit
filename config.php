@@ -1,6 +1,7 @@
 <?php  
 return [
-
+    'app_name' => 'App',
+    'host' => '127.0.0.1',
     "database" =>[
         'driver' => "mysql" ,
         'dsn' => [
