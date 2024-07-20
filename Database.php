@@ -23,12 +23,12 @@ class Database {
      * @param $statment  query statmet which will exicute in databse 
      * @return  $data from database query
      */
-    public function query($statment)
+    public function query($statment , $param = [])
     {
 
 
         $statment = $this->pdo->prepare($statment);
-        return   $statment->execute();
+        return   $statment->execute($param);
          
     }
 
