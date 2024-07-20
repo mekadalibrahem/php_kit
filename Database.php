@@ -21,6 +21,7 @@ class Database {
     /**
      * method call spific qeury for database 
      * @param $statment  query statmet which will exicute in databse 
+     * @param $param    query parameters value used it when execute query
      * @return  $data from database query
      */
     public function query($statment , $param = [])
